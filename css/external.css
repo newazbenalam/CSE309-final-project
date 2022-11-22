@@ -1,0 +1,8 @@
+.animate-effect {
+    animation: myanime 10s infinite;
+    
+}
+
+@keyframes myanime {
+
+}
