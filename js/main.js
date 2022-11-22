@@ -17,13 +17,13 @@ for (let i = 0; i < ticketBtns.length; i++) {
         console.log(showImageLink)
 
         let sidebar = document.querySelector(".sidebar")
-        sidebar.querySelector(".side-image").src = showImageLink
-        sidebar.querySelector(".showName").innerHTML = showName
-
+        
         if (sidebar.style.width === sidebarWidth) {
             sidebar.style.width = "0rem"
         }
         else{
+            sidebar.querySelector(".side-image").src = showImageLink
+            sidebar.querySelector(".showName").innerHTML = showName
             sidebar.style.width = sidebarWidth
         }
     })
