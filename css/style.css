@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mybg-light{
+    background-color: #cad4e2;
+}
+
+.mybg-dark{
+    background-color: #1e2633;
+}
+
+.mybutton{
+    background-color: rgb(211, 2, 113);
+    transition: 0.4s ease-out;
+    border: none;
+
+}
+
+.mybutton:hover{
+    background-color: #1e2633;
+    
+}
+
+.custom-nav{
+    min-height: 7vh;
+}
+
+.nav-effect{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: 0.4s ease-out;
+}
+
+.nav-effect:hover{
+    color: deeppink;
+}
+
+.carousel-item{
+    max-height: 65vh;
+}
+
+.carousel-image {
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+}
+
+.section{
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.show-heading{
+    margin-top: 1rem;
+}
+
+.show-container{
+    margin: auto;
+    padding: 1rem 0;
+    column-gap: 0.8rem;
+    row-gap: 1.5rem;
+}
+.show-item{
+    width: 15rem;
+    min-height: 23rem;
+    overflow: hidden;
+    cursor: pointer;            
+    transition: 0.4s ease-out;
+    box-shadow: 0rem 0rem 0.7rem #1e2633;
+}
+
+.image-holder:hover .image{
+    transform: scale(1.08);
+}
+
+.image-holder{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.4s ease-out;
+}
+
+.text-holder{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    overflow: auto;
+}
+
+.sidebar{
+    width: 23rem;
+    background-color: black;
+    z-index: 2;
+}
+
+
+@media only screen and (max-width: 650px){
+
+    html p{
+        font-size: 14px;
+    }
+
+    .section{
+        width: 90%;
+    }
+
+    .show-heading{
+        text-align: center;
+    }
+
+    .show-item{
+        width: 13rem;
+        min-height: 18rem;
+    }
+
+    .carousel-item{
+        max-height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 350px){
+
+    html p{
+        font-size: 13px;
+    }
+
+
+
+
+}
