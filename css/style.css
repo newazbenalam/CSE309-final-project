@@ -17,7 +17,7 @@
 }
 
 .mybg-dark{
-    background-color: #1e2633;
+    background-color: #080424;
 }
 
 .mybutton{
@@ -27,7 +27,7 @@
 }
 
 .mybutton:hover{
-    background-color: #1e2633;
+    background-color: #080424;
     
 }
 
@@ -43,7 +43,15 @@
 }
 
 .nav-effect:hover{
-    color: deeppink;
+    color: rgb(211, 2, 113);
+}
+
+.logo-span{
+    color: #f0ad4e;
+}
+
+.nav-effect:hover .logo-span{
+    color: rgb(211, 2, 113);
 }
 
 .carousel-item{
