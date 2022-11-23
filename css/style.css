@@ -12,38 +12,46 @@
     color: white;
 } */
 
+:root{
+    --bg-dark: #080424;
+    --bg-light: #bdc8d8;
+    --button-color: rgb(211, 0, 112);
+    --button-hover: #080424;
+    --font-light: white;
+}
+
 .mybg-light{
-    background-color: #cad4e2;
+    background-color: var(--bg-light);
 }
 
 .mybg-dark{
-    background-color: #080424;
+    background-color: var(--bg-dark);
 }
 
 .mybutton{
-    background-color: rgb(211, 2, 113);
+    background-color: var(--button-color);
     transition: 0.4s ease-out;
     border: none;
 }
 
 .mybutton:hover{
-    background-color: #080424;
+    background-color: var(--button-hover);
     
 }
 
 .custom-nav{
-    min-height: 7vh;
+    min-height: 9vh;
 }
 
 .nav-effect{
-    color: white;
+    color: var(--font-light);
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.8rem;
     transition: 0.4s ease-out;
 }
 
 .nav-effect:hover{
-    color: rgb(211, 2, 113);
+    color: var(--button-color);
 }
 
 .logo-span{
@@ -51,7 +59,7 @@
 }
 
 .nav-effect:hover .logo-span{
-    color: rgb(211, 2, 113);
+    color: var(--button-color);
 }
 
 .carousel-item{
@@ -115,9 +123,14 @@
     overflow: auto;
 }
 
+.button-holder{
+    gap: 0.1rem;
+    padding: 0.1rem;
+}
+
 .sidebar{
     width: 0rem;
-    background-color: black;
+    background-color: var(--bg-dark);
     z-index: 2;
     transition: 0.4s ease-in-out;
 }
