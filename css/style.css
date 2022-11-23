@@ -15,8 +15,8 @@
 :root{
     --bg-dark: #080424;
     --bg-light: #bdc8d8;
-    --button-color: rgb(211, 0, 112);
-    --button-hover: #080424;
+    --button-color: rgb(196, 25, 110);
+    --button-hover: rgb(22, 170, 145);
     --font-light: white;
 }
 
