@@ -12,55 +12,25 @@
     color: white;
 } */
 
-:root{
-    --bg-dark: #080424;
-    --bg-light: #bdc8d8;
-    --button-color: rgb(196, 25, 110);
-    --button-hover: rgb(7, 110, 136);
-    --font-light: white;
-}
 
-.mybg-light{
-    background-color: var(--bg-light);
-}
-
-.mybg-dark{
-    background-color: var(--bg-dark);
-}
 
 .mybutton{
-    background-color: var(--button-color);
     transition: 0.4s ease-out;
     border: none;
 }
 
-.mybutton:hover{
-    background-color: var(--button-hover);
-    
-}
 
 .custom-nav{
     min-height: 9vh;
 }
 
 .nav-effect{
-    color: var(--font-light);
     text-decoration: none;
     padding: 0.8rem;
     transition: 0.4s ease-out;
 }
 
-.nav-effect:hover{
-    color: var(--button-color);
-}
 
-.logo-span{
-    color: #f0ad4e;
-}
-
-.nav-effect:hover .logo-span{
-    color: var(--button-color);
-}
 
 .carousel-item{
     max-height: 65vh;
@@ -130,7 +100,6 @@
 
 .sidebar{
     width: 0rem;
-    background-color: var(--bg-dark);
     z-index: 2;
     transition: 0.4s ease-in-out;
 }
@@ -169,6 +138,11 @@
     font-size: 1.1rem;
 }
 
+.grid-image{
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
 
 @media only screen and (max-width: 650px){
 
@@ -199,8 +173,6 @@
     html p{
         font-size: 13px;
     }
-
-
 
 
 }

@@ -1,12 +1,55 @@
-.animate-effect {
-    animation: myanime 10s infinite;
-    
+/* COLORS */
+
+:root{
+    --nav-p: rgb(20, 20, 20);
+    --bg-p-1: #59253A;
+    --bg-p-2: #284951;
+    --bg-p-3: #895061;
+    --bg-p-button: #895061;
+    --bg-p-button-hover: rgb(20, 20, 20);
+    --font-p: rgb(226, 226, 226);
+    --bg-p-showbox: black;
 }
 
-@keyframes myanime {
-
+.logo-span{
+    color: #f0ad4e;
 }
 
-.active{
-    color: aquamarine;
+.nav-p-link-color{
+    color: white;
+}
+
+.nav-p-link-color:hover{
+    color: #4f9bb3;
+}
+
+.show-p-section-bg{
+    background-color: var(--bg-p-1);
+}
+
+.font-p{
+    color: var(--font-p);
+}
+
+.show-p-item-bg{
+    background-color: var(--nav-p);
+    color: white;
+}
+
+.button-p-bg{
+    background-color: var(--bg-p-button);
+    color: white;
+}
+
+.button-p-bg:hover{
+    background-color: var(--bg-p-button-hover);
+    color: white;
+}
+
+.sidebar-p-bg{
+    background-color: var(--bg-p-2);
+}
+
+.bgnav-p{
+    background-color: var(--nav-p);
 }
