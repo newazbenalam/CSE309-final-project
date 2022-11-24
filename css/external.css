@@ -24,7 +24,7 @@
 }
 
 .heading-p-text{
-    color: #da9534;
+    color: goldenrod;
 }
 
 .nav-p-link-color{
@@ -46,7 +46,7 @@
 .show-p-item-bg{
     background-color: var(--bg-p-showbox);
     color: white;
-    color: gold;
+    color: rgb(255, 201, 66);
 }
 
 .button-p-bg{
