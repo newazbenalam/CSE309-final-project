@@ -12,7 +12,10 @@
     color: white;
 } */
 
-
+.heading-text{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
 .mybutton{
     transition: 0.4s ease-out;
@@ -138,10 +141,18 @@
     font-size: 1.1rem;
 }
 
+/* ABOUT US */
+
+.small-section{
+    width: 92%;
+    margin: auto;
+}
+
 .grid-image{
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 @media only screen and (max-width: 650px){
@@ -166,6 +177,10 @@
     .carousel-item{
         max-height: 80vh;
     }
+
+    .small-section{
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 350px){
@@ -174,5 +189,8 @@
         font-size: 13px;
     }
 
+    .small-section{
+        width: 100%;
+    }
 
 }

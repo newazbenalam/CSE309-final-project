@@ -2,17 +2,29 @@
 
 :root{
     --nav-p: rgb(20, 20, 20);
-    --bg-p-1: #59253A;
+    --bg-p-1: #292b2c;
     --bg-p-2: #284951;
     --bg-p-3: #895061;
-    --bg-p-button: #895061;
-    --bg-p-button-hover: rgb(20, 20, 20);
+    --bg-p-button: #284951;
+    --bg-p-button-hover: #895061;
     --font-p: rgb(226, 226, 226);
     --bg-p-showbox: black;
 }
 
+.bg-p-1{
+    background-color: var(--bg-p-1);
+}
+
+.bg-p-2{
+    background-color: var(--bg-p-2);
+}
+
 .logo-span{
     color: #f0ad4e;
+}
+
+.heading-p-text{
+    color: #da9534;
 }
 
 .nav-p-link-color{
@@ -32,8 +44,9 @@
 }
 
 .show-p-item-bg{
-    background-color: var(--nav-p);
+    background-color: var(--bg-p-showbox);
     color: white;
+    color: gold;
 }
 
 .button-p-bg{
@@ -48,6 +61,15 @@
 
 .sidebar-p-bg{
     background-color: var(--bg-p-2);
+}
+
+.button-p-sidebar-bg{
+    background-color: #895061;
+    color: white;
+}
+
+.button-p-sidebar-bg:hover{
+    background-color: #d19644;
 }
 
 .bgnav-p{
