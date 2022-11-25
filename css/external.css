@@ -6,7 +6,7 @@
     --bg-p-2: #284951;
     --bg-p-3: #895061;
     --bg-p-button: #284951;
-    --bg-p-button-hover: #895061;
+    --bg-p-button-hover: #7e233f;
     --font-p: rgb(226, 226, 226);
     --bg-p-showbox: black;
 }
@@ -64,7 +64,7 @@
 }
 
 .button-p-sidebar-bg{
-    background-color: #895061;
+    background-color: var(--bg-p-button-hover);
     color: white;
 }
 
