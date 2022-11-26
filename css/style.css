@@ -12,6 +12,14 @@
     color: white;
 } */
 
+h1{
+    transition: 0.5s ease;
+}
+
+p{
+    transition: 0.5s ease;
+}
+
 .heading-text{
     font-size: 2.5rem;
     font-weight: bold;
@@ -162,6 +170,19 @@
     transform: scale(1.05);
 }
 
+.text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgba(218, 165, 32, 0.514);
+    background-color: #284951; */
+    height: 100%;
+    padding: 2rem;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
 @media only screen and (max-width: 650px){
 
     html p{
@@ -188,6 +209,10 @@
     .small-section{
         width: 95%;
     }
+
+    .text-section{
+        padding: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 350px){
@@ -200,4 +225,8 @@
         width: 100%;
     }
 
+    .text-section{
+        padding: 1.1rem;
+    }    
+    
 }

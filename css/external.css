@@ -98,4 +98,20 @@
     border: 2px solid #d19644b0;
     color: white;
 }
+.text-section{
+    background-color: rgba(218, 165, 32, 0.514);
+    background-color: #284951;
+}
 
+.text-section:hover{
+    background-color: var(--bg-p-button-hover);
+    color: white;
+}
+
+.text-section:hover h1{
+    color: white;
+}
+
+.hover-here{
+    background-color: black;
+}
