@@ -3,6 +3,9 @@ window.addEventListener("resize", () => {
     if(screen.width < 650){
         sidebarWidth = "17rem"
     }
+    else{
+        sidebarWidth = "23rem"
+    }
 })
 
 let ticketBtns = $(".detailsBtn")

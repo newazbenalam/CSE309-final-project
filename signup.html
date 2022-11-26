@@ -14,6 +14,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/external.css">
+    <link rel="stylesheet" type="text/css" href="./css/form.css">
 
     <!-- Google Fonts Start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,10 +29,10 @@
 </head>
 
 <body>
-    <div class="main position-relative">
+    <div class="main position-relative min-vh-100 background-form">
 
-        <!-- Navbar Starts Here -->
-        <nav class="custom-nav navbar navbar-dark navbar-expand-lg bgnav-p">
+        <!-- Navbar Starts Here SPECIAL -->
+        <nav class="custom-nav navbar navbar-dark navbar-expand-lg bgnav-p position-absolute start-0 top-0 end-0">
             <div class="container-fluid">
                 <a class="navbar-brand nav-effect nav-p-link-color" href="./index.html">
                     <div class="d-flex align-items-center justify-content-center gap-3">
@@ -67,75 +68,79 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
+                    <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </nav>
         <!-- Navbar Ends -->
 
-        <div class="bg-dark text-white">
-            <div class="section">
-                <div class="small-section">
-                <p class="heading-text heading-p-text" style="font-size: 2.5rem;">About Us</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nemo nihil eligendi commodi possimus numquam aut fugiat aperiam saepe, itaque, non exercitationem enim expedita illo delectus quo. Excepturi iste officiis asperiores at maiores ea id iusto dignissimos. Ipsum, consectetur reiciendis quis quibusdam consequuntur deserunt temporibus iusto ipsam repellat facilis rem vero, consequatur cumque expedita provident sit nesciunt maxime harum porro pariatur, reprehenderit nulla soluta ex fugiat! Et nisi aut consequuntur omnis distinctio tempore reiciendis delectus itaque, saepe commodi illo accusamus id beatae aspernatur quam possimus facere rerum porro incidunt veritatis iusto inventore veniam expedita? Rerum fugit vitae repudiandae quos nesciunt!</p>
-                </div>
-    
-            </div>
-        </div>
 
-
-        <div class="bg-dark min-vh-100">
-            <div class="section">
-                <div class="small-section">
-                    <div class="row text-white">
-                        <div class="col-12 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" src="./image/pic0.png">
+        <!-- Login Template Starts Here -->
+        <div class="d-flex justify-content-center align-items-center h-100" style="padding: 10rem 5rem;">
+            <form class="form-container" method="POST" action="">
+                <div class="form-box flex-column">
+                    <div class="form-block full-width" style="text-align: center;">
+                        <h2>Sign Up</h2>
+                    </div>                    
+                    <div class="row gap-0 m-0 p-0">
+                        <div class="col-md-6 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">First Name</label>
+                                <input class="text-input" type="text" name="fname" required>
                             </div>
                         </div>
-                        <div class="col-lg-4 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" src="./image/pic1.jpg">
+                        <div class="col-md-6 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">Last Name</label>
+                                <input class="text-input" type="text" name="lname" required>
                             </div>
                         </div>
-                        <div class="col-lg-5 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" src="./image/pic2.jpg">
+                        <!--  -->
+                        <div class="col-md-6 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">Address</label>
+                                <input class="text-input" type="text" name="address" required>
                             </div>
                         </div>
-                        <div class="col-lg-3 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" src="./image/pic3.png">
+                        <div class="col-md-3 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">City</label>
+                                <input class="text-input" type="text" name="city" required>
                             </div>
                         </div>
-                        <div class="col-lg-8 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" style="object-position: bottom;" src="./image/pic5.webp">
+                        <div class="col-md-3 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">Zip</label>
+                                <input class="text-input" type="text" name="zip" required>
                             </div>
                         </div>
-                        <div class="col-lg-4 p-0">
-                            <div class="overflow-hidden p-1">
-                                <img class="grid-image" src="./image/pic6.webp">
+                        <!--  -->
+                        <div class="col-md-6 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">Email</label>
+                                <input class="text-input" type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-1">
+                            <div class="form-block full-width px-1">
+                                <label class="text-label">Password</label>
+                                <input class="text-input" type="password" name="password" required>
+                            </div>
+                        </div>
+                        <div class="col-12 px-1">
+                            <div class="form-block full-width px-1">
+                                <button class="form-button" type="submit" name="submit">Sign Up</button>
                             </div>
                         </div>
                     </div>
-                </div>
     
-            </div>
-        </div>
-
-        <div class="bg-dark text-white">
-            <div class="section">
-                <div class="small-section">
-                <p class="heading-text heading-p-text">Contact Us</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus libero aperiam, assumenda corporis enim, alias voluptatibus aspernatur corrupti magni nostrum distinctio. Ab commodi veritatis possimus quidem velit nihil necessitatibus natus suscipit. Earum optio, nisi assumenda at, quia a nostrum laboriosam voluptatum accusantium dolorum accusamus ipsum voluptatem, molestias beatae sed soluta.</p>
                 </div>
-    
-            </div>
+            </form>
         </div>
+        <!-- Login Template Ends -->
 
     </div>
 </body>

@@ -19,6 +19,14 @@
     background-color: var(--bg-p-2);
 }
 
+.bg-p-3{
+    background-color: var(--bg-p-3);
+}
+
+.bg-p-4{
+    background-color: #1f424b;
+}
+
 .logo-span{
     color: #f0ad4e;
 }
@@ -75,3 +83,19 @@
 .bgnav-p{
     background-color: var(--nav-p);
 }
+
+.form-button{
+    background-color: var(--bg-p-button-hover);
+}
+
+
+.form-button:hover{
+    background-color: #d19644;
+    color: black;
+}
+
+.form-container .text-input{
+    border: 2px solid #d19644b0;
+    color: white;
+}
+

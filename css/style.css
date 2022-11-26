@@ -61,6 +61,7 @@
     column-gap: 0.8rem;
     row-gap: 1.5rem;
 }
+
 .show-item{
     width: 15rem;
     min-height: 23rem;
@@ -153,6 +154,12 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.grid-image:hover{
+    transform: scale(1.05);
 }
 
 @media only screen and (max-width: 650px){
@@ -170,7 +177,7 @@
     }
 
     .show-item{
-        width: 13rem;
+        max-width: 14rem;
         min-height: 18rem;
     }
 
