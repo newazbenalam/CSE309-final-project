@@ -79,7 +79,7 @@
 
 
         <!-- Login Template Starts Here -->
-        <div class="d-flex justify-content-center align-items-center h-100" style="padding: 10rem 5rem;">
+        <div class="d-flex justify-content-center align-items-center h-100" style="padding: 10rem 0;">
             <form class="form-container" method="POST" action="">
                 <div class="form-box flex-column">
                     <div class="form-block full-width" style="text-align: center;">
@@ -108,7 +108,26 @@
                         <div class="col-md-3 px-1">
                             <div class="form-block full-width px-1">
                                 <label class="text-label">City</label>
-                                <input class="text-input" type="text" name="city" required>
+                                <!-- <input class="text-input" type="text" name="city" required> -->
+                                <select id="cities" class="text-input" name="city" style="cursor: pointer;" required>
+                                    <option class="bg-dark" value="Dhaka">Dhaka</option>
+                                    <option class="bg-dark" value="Chittagong">Chittagong</option>
+                                    <option class="bg-dark" value="Sylhet">Sylhet</option>
+                                    <option class="bg-dark" value="Rajshahi">Rajhshahi</option>
+                                    <option class="bg-dark" value="Khulna">Khulna</option>
+                                </select>
+                                <!-- <script>
+                                    let citiesArr = ["Dhaka", "Chittagong", "Select", "Cox's Bazar"]
+                                    let selectTag = document.getElementById("select")
+                                    let optionClass = "bg-dark"
+                                    for(let i = 0; i < citiesArr.length; i++){
+                                        let optionTag = document.createElement("option")
+                                        console.log(optionTag)
+                                        optionTag.classList.add(optionClass)
+                                        optionTag.innerHTML = citiesArr[i]
+                                        selectTag.appendChild(optionTag)
+                                    }
+                                </script> -->
                             </div>
                         </div>
                         <div class="col-md-3 px-1">

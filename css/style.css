@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,83 +12,86 @@
     color: white;
 } */
 
-h1{
+h1 {
     transition: 0.5s ease;
 }
 
-p{
+p {
     transition: 0.5s ease;
 }
 
-.heading-text{
+.heading-text {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.mybutton{
+.mybutton {
     transition: 0.4s ease-out;
     border: none;
 }
 
 
-.custom-nav{
+.custom-nav {
     min-height: 9vh;
 }
 
-.nav-effect{
+.nav-effect {
     text-decoration: none;
     padding: 0.8rem;
-    transition: 0.4s ease-out;
+    transition: 0.3s ease-out;
 }
 
 
 
-.carousel-item{
+/* .carousel-item {
     max-height: 65vh;
-}
+} */
 
 .carousel-image {
-    width: 100%;
+    /* width: 100%;
     object-fit: fill;
-    object-position: center;
+    object-position: center; */
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
 }
 
-.section{
+.section {
     width: 80%;
     margin: auto;
     padding: 2rem 0;
 }
 
-.show-heading{
+.show-heading {
     margin-top: 1rem;
 }
 
-.show-container{
+.show-container {
     margin: auto;
     padding: 1rem 0;
     column-gap: 0.8rem;
     row-gap: 1.5rem;
 }
 
-.show-item{
+.show-item {
     width: 15rem;
     min-height: 23rem;
     overflow: hidden;
-    cursor: pointer;            
+    cursor: pointer;
     transition: 0.4s ease-out;
     box-shadow: 0rem 0rem 0.7rem #1e2633;
 }
 
-.image-holder:hover .image{
+.image-holder:hover .image {
     transform: scale(1.08);
 }
 
-.image-holder{
+.image-holder {
     height: 20rem;
     overflow: hidden;
 }
 
-.image{
+.image {
     width: 100%;
     height: 20rem;
     object-fit: cover;
@@ -96,7 +99,7 @@ p{
     transition: 0.4s ease-out;
 }
 
-.text-holder{
+.text-holder {
     height: 4rem;
     display: flex;
     align-items: center;
@@ -105,31 +108,31 @@ p{
     overflow: auto;
 }
 
-.button-holder{
+.button-holder {
     gap: 0.1rem;
     padding: 0.1rem;
 }
 
-.sidebar{
+.sidebar {
     width: 0rem;
     z-index: 2;
     transition: 0.4s ease-in-out;
 }
 
-.sidebar p{
+.sidebar p {
     margin: 0.3rem 0;
     padding: 0;
 }
 
-.sidebar-inner{
+.sidebar-inner {
     padding: 0.8rem;
 }
 
-.sidebar-inner::-webkit-scrollbar{
+.sidebar-inner::-webkit-scrollbar {
     display: none;
 }
 
-.side-image-holder{
+.side-image-holder {
     width: 100%;
     height: 50vh;
     margin: auto;
@@ -137,14 +140,14 @@ p{
     overflow: hidden;
 }
 
-.side-image{
+.side-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.side-show-details{
+.side-show-details {
     width: 90%;
     margin: auto;
     font-size: 1.1rem;
@@ -152,12 +155,12 @@ p{
 
 /* ABOUT US */
 
-.small-section{
+.small-section {
     width: 92%;
     margin: auto;
 }
 
-.grid-image{
+.grid-image {
     height: 30vh;
     width: 100%;
     object-fit: cover;
@@ -166,11 +169,11 @@ p{
     cursor: pointer;
 }
 
-.grid-image:hover{
+.grid-image:hover {
     transform: scale(1.05);
 }
 
-.text-section{
+.text-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,50 +186,81 @@ p{
     transition: 0.5s ease;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
 
-    html p{
+    html p {
         font-size: 14px;
     }
 
-    .section{
+    .section {
         width: 90%;
     }
 
-    .show-heading{
+    .show-heading {
         text-align: center;
     }
 
-    .show-item{
+    .show-item {
         max-width: 14rem;
         min-height: 18rem;
     }
 
-    .carousel-item{
+    .carousel-item {
         max-height: 80vh;
     }
 
-    .small-section{
+    .small-section {
         width: 95%;
     }
 
-    .text-section{
+    .text-section {
         padding: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 350px) {
 
-    html p{
+    html p {
         font-size: 13px;
     }
 
-    .small-section{
+    .small-section {
         width: 100%;
     }
 
-    .text-section{
+    .text-section {
         padding: 1.1rem;
-    }    
-    
+    }
+
+}
+
+
+.modal{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.mytransition {
+    animation-name: anime;
+    animation-duration: 0.6s;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        width: 20%;
+        height: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.xxy{
+    height: 70vh;    
+    background-position: center;
+    background-size: cover;
 }
