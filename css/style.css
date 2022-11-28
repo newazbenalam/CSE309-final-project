@@ -193,6 +193,87 @@ p {
     transition: 0.5s ease;
 }
 
+
+
+
+/* Modal */
+.modal{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-item{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+.modal-image-holder{
+    overflow: hidden;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.modal-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.4s ease;
+}
+
+.modal-image:hover{
+    transform: scale(1.05);
+}
+
+
+.modal-texts{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.modal-box{
+    width: 50%; 
+    height: 60%;
+}
+
+.mytransition {
+    animation-name: anime;
+    animation-duration: 0.6s;
+}
+
+@keyframes anime {
+    0% {
+        opacity: 0;
+        width: 20%;
+        height: 20%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 50%;
+        height: 60%;
+    }
+}
+/* Modal Ends*/
+
+
+
+
+
+
+
+
+/* MEDIA STARTS */
+@media only screen and (max-width: 1000px){
+    .modal-image{
+        height: 20rem;
+    }
+}
+
 @media only screen and (max-width: 650px) {
 
     html p {
@@ -223,6 +304,26 @@ p {
     .text-section {
         padding: 1.5rem;
     }
+
+    .modal-box{
+        width: 80%;
+    }
+
+
+    @keyframes anime {
+        0% {
+            opacity: 0;
+            width: 20%;
+            height: 20%;
+        }
+    
+        100% {
+            opacity: 1;
+            width: 80%;
+            height: 60%;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 350px) {
@@ -242,32 +343,4 @@ p {
 }
 
 
-.modal{
-    display: none;
-    transition: 1s ease-in-out;
-}
 
-.mytransition {
-    animation-name: anime;
-    animation-duration: 0.6s;
-}
-
-@keyframes anime {
-    0% {
-        opacity: 0;
-        width: 20%;
-        height: 20%;
-    }
-
-    100% {
-        opacity: 1;
-        width: 70%;
-        height: 70%;
-    }
-}
-
-.xxy{
-    height: 70vh;    
-    background-position: center;
-    background-size: cover;
-}

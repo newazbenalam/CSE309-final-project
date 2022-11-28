@@ -8,10 +8,10 @@ window.addEventListener("resize", () => {
     }
 })
 
-let ticketBtns = $(".detailsBtn")
-for (let i = 0; i < ticketBtns.length; i++) {
-    ticketBtns[i].addEventListener('click', (e) => {
-        let element = ticketBtns[i]
+let detailsBtns = $(".detailsBtn")
+for (let i = 0; i < detailsBtns.length; i++) {
+    detailsBtns[i].addEventListener('click', (e) => {
+        let element = detailsBtns[i]
         let showbox = element.parentElement.parentElement
 
         let showImageLink = showbox.querySelector(".image").src
