@@ -148,11 +148,30 @@
 }
 
 #goToPaymentBtn{
-    background-color: seagreen;  
+    background-color: rgb(65, 65, 141);  
     color: white;
     transition: 0.4s ease; 
 }
 
 #goToPaymentBtn:hover{
     background-color: goldenrod;
+}
+
+.bg-footer{
+    background-color: rgb(68, 19, 33);
+}
+
+.bg-footer-bottom{
+    background-color: rgb(37, 10, 18);
+}
+
+.myfooter-links{
+    color: rgb(233, 233, 233);
+    transition: 0.5s ease-out;
+    padding: 0.05rem 0;
+    text-align: left;
+}
+
+.myfooter-links:hover{
+    color: goldenrod;
 }
