@@ -2,11 +2,13 @@
 
 :root{
     --nav-p: rgb(20, 20, 20);
-    --bg-p-1: #292b2c;
+    --bg-p-1: #3a101c;
     --bg-p-2: #284951;
     --bg-p-3: #895061;
+    --bg-p-4: #1f424b;
+    --bg-p-5: #1f1f1f;
     --bg-p-button: #284951;
-    --bg-p-button-hover: #7e233f;
+    --bg-p-button-hover: #721c36;
     --font-p: rgb(226, 226, 226);
     --bg-p-showbox: black;
 }
@@ -24,7 +26,11 @@
 }
 
 .bg-p-4{
-    background-color: #1f424b;
+    background-color: var(--bg-p-4);
+}
+
+.bg-p-5{
+    background-color: var(--bg-p-5);
 }
 
 .logo-span{
@@ -64,6 +70,10 @@
     outline: none;
     border: none;
     cursor: not-allowed;
+}
+
+.mybutton:disabled:hover{
+    background-color: rgb(66, 66, 66);
 }
 
 .button-p-bg{
@@ -123,6 +133,15 @@
 
 .hover-here{
     background-color: black;
+    transition: 0.4s ease-out;
+}
+
+.hover-here:hover{
+    background-color: #49071a;
+}
+
+.modal{
+    background-color: rgba(20, 20, 20, 0.5)
 }
 
 .modal-show-heading{
@@ -148,7 +167,7 @@
 }
 
 #goToPaymentBtn{
-    background-color: rgb(65, 65, 141);  
+    background-color: rgb(41, 41, 109);  
     color: white;
     transition: 0.4s ease; 
 }

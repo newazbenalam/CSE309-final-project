@@ -14,6 +14,12 @@ ticketBtns.forEach(each => {
 
         modal.querySelector(".modal-image").src = showImageLink
         modal.querySelector(".modal-show-heading").innerHTML = showName
+
+        let sidebar = document.querySelector(".sidebar")
+        if(sidebar.style.width !== 0){
+            sidebar.style.width = 0
+        }
+
     })
 })
 

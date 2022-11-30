@@ -24,6 +24,10 @@ a{
     text-decoration: none;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 .heading-text {
     font-size: 2.5rem;
     font-weight: bold;
@@ -262,6 +266,7 @@ a{
         height: 60%;
     }
 }
+
 /* Modal Ends*/
 
 
