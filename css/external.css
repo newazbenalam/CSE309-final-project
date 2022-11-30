@@ -63,6 +63,22 @@
     color: rgb(255, 201, 66);
 }
 
+.myactive{
+    color: #d19644;
+}
+
+.myactive:hover{
+    color: #4f9bb3;
+}
+
+.show-nav{
+    color: #4f9bb3;
+}
+
+.show-nav:hover{
+    color: rgb(201, 64, 166);
+}
+
 /* Disabled Button */
 .mybutton:disabled{
     background-color: rgb(66, 66, 66);

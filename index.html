@@ -62,11 +62,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-effect nav-p-link-color nav-link" aria-current="page" href="./index.html">Home</a>
+                            <a class="nav-effect nav-p-link-color nav-link myactive" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-effect show-nav nav-p-link-color nav-link" href="#wholeShow">Shows</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-effect nav-p-link-color nav-link" href="./aboutUs.html">About Us</a>
-                        </li>
+                        </li>                        
                         <li class="nav-item dropdown">
                             <a class="nav-effect nav-p-link-color nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,11 +84,10 @@
                                 <li><a class="dropdown-item" href="#">Setting</a></li>
                             </ul>
                         </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    </ul>                                            
+                    <div class="profile-nav d-flex">
+                        <a class="nav-effect nav-p-link-color nav-link" href="./login.html">Profile / Login</a>
+                    </div>                    
                 </div>
             </div>
         </nav>
@@ -168,7 +170,7 @@
 
 
         <!-- Show Section Starts Here -->
-        <div class="show-p-section-bg font-p pb-5">
+        <div id="wholeShow" class="show-p-section-bg font-p pb-5">
             <div class="section">
                 <div class="show-heading heading-text heading-p-text">
                     <p class="m-0 p-0">Get Show Details</p>
@@ -482,7 +484,7 @@
                     </div>
                     <div class="col-lg-6 m-0 p-0">
                         <div class="modal-texts d-flex flex-column align-items-center py-4 w-100">
-                            <h1 class="modal-show-heading mb-3">AIDA</h1>
+                            <h1 class="modal-show-heading mb-5">AIDA</h1>
                             <p>Ticket Price: 650</p>
                             <p>Show Time: 12:00 - 1:00 PM</p>
                             <p>Show Duration: 1hr</p>
