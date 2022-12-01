@@ -37,3 +37,6 @@ document.querySelector('.sidebar-close').addEventListener("click", () => {
     let sidebar = document.querySelector(".sidebar")
     sidebar.style.width = "0rem"
 })
+
+
+

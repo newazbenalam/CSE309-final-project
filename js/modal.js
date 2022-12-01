@@ -28,5 +28,16 @@ document.getElementById("modalClosebtn").addEventListener("click", () => {
 })
 
 document.getElementById("goToPaymentBtn").addEventListener("click", () => {
-    location.href = "ticket.html"
+    let showName = document.querySelector(".modal-show-heading").innerHTML
+    location.href = `ticket.html?name=${showName}`
+})
+
+
+document.addEventListener("click", (e) => {
+    console.log(e.target.classList)
+    e.target.classList.forEach(element => {
+        if(element === "modal"){
+            document.querySelector(".modal").style.display = "none"
+        }
+    })
 })
