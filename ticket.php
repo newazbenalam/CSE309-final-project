@@ -1,3 +1,14 @@
+<?php
+
+require $_SERVER['DOCUMENT_ROOT'] . "./src/lib/database.php";
+$res = "";
+if (isset($_POST['submit'])) {
+  $res = (new database)->buyticket($_POST['show_id'], $_POST['show_name'], $_POST['num_tickets']);
+  // echo $res;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

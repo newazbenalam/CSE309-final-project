@@ -43,6 +43,6 @@ document.getElementById("plus-button").addEventListener("click", () => {
     }
 })
 
-document.getElementById("confirm-tickets").addEventListener("click", () => {
-    location.href = "index.html"
-})
+// document.getElementById("confirm-tickets").addEventListener("click", () => {
+//     location.href = "index.html"
+// })

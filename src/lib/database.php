@@ -5,8 +5,21 @@ class database {
   private $hostName = "localhost";
   private $userName = "root";
   private $password = "";
-  private $dbName = "form_db";
+  private $dbName = "theater_db";
 
+  public function buyticket($show_id = "", $show_name = "", $count_tickets = "") {
+    $result =  "Error";
+    $query = "INSERT INTO submission(show_id, show_name, num_ticket) VALUE('$show_id', '$show_name', '$count_tickets');";
+
+    $conn = mysqli_connect($this->hostName, $this->userName, $this->password, $this->dbName);
+    if (mysqli_query($conn, $query)) {
+      $result =  "Query submitted successfully!";
+    }
+    mysqli_close($conn);
+    return $result;
+  }
+
+  // previous function
   public function sendMessage($name = "", $email = "", $message = "") {
     $result =  "Error";
     $query = "INSERT INTO submission(name, email, comments) VALUE('$name', '$email', '$message');";
